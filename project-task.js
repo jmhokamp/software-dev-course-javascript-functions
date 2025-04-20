@@ -72,3 +72,39 @@ for (let i = 0; i < names.length; i++) {
 */
 
 // ✅ Your refactored code goes below this line!
+
+// Script 1 - Greeting multiple users refractor
+
+function greet(name){
+return `Welcome, ${name}! `; 
+
+}
+console.log(greet("Alice"));
+console.log(greet("Bob"));
+console.log(greet("Charlie"));
+
+// Script 2 - Sum calculation Refractor
+function sumCaluclation(num1, num2){
+
+   let sum = num1 + num2;
+   return  `The sum of ${num1} and ${num2} is: ${sum}`;
+}
+console.log(sumCaluclation(6, 10));
+
+// Script 3 - Product calculation
+function productCaluclation(num1, num2){
+
+   let sum = num1 * num2;
+   return  `The product of ${num1} and ${num2} is: ${sum}`;
+}
+console.log(productCaluclation(6, 10));
+
+// Script 4 - Print names from a list
+
+function printNameList(nameArray) {
+   console.log("Names in the list:");
+   for (let i = 0; i < nameArray.length; i++) {
+       console.log(nameArray[i]);
+   }
+}
+printNameList(names);

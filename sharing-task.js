@@ -89,3 +89,35 @@ reusable functions that solve specific tasks. This activity encourages:
 // - Explain how your team approached the design and testing process
 
 // ✅ Bonus: Can you extend any of the functions to be more flexible or reusable?
+
+
+//🧩 Task 1: Generate Attendee Badge Refractor
+
+function badge(name, role){
+    let upperCaseRole = role.charAt(0).toUpperCase() + role.slice(1);
+    return `Name: ${name}, Role: ${upperCaseRole}`;
+}
+console.log(badge("James", "construction"));
+
+
+// 🧩 Task 2: Calculate Event Cost Refractor
+
+function totalCost(price, attend){
+
+    if (attend > 100 ){
+        return (((price * attend) / 100) * 90)
+
+    } else {
+        return ` Your total price is`, price * attend
+    }
+}
+
+console.log(totalCost(10, 99));
+
+// 🧩 Task 3: Validate Email Refractor
+
+function isValidEmail(email) {
+    return email.includes("@") && email.includes(".");
+}
+console.log(isValidEmail("thisisatestemail.@test.com"));
+console.log(isValidEmail("thiswillgivefaslseaol.com"));
